@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script type="module">
+    import {Carte} from './Carte.js';
+    let carte1 = new Carte('Ion','Liviu Rebreanu','Polimor', 2007,200);
+    let carte2= new Carte('Enigma Otiliei','George Calinescu','All',2003, 300);
+    let carte3 = new Carte('Morometii','Marin Preda','Univers',200, 400);
+    let info = carte1.afiseazaInfo();
+    let demo = document.getElementById('demo');
+    demo.innerHTML = info;
+    //  document.writeln(carte1.afiseazaInfo)
+//  // carte1.afiseazaInfo();
+//   carte1.obtineTitlu();
+//   carte1.deschidCartea();
+//   console.log(carte1);
+  
+
+
+    </script>
+</body>
+</html>
